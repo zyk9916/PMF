@@ -69,4 +69,4 @@ class PMF():
 if __name__=='__main__':
     pmf = PMF()
     num_user,num_item,trainset,testset = pmf.load_data('ml-100k/u.data',0.8)    # 读取数据，训练集:测试集=8:2
-    pmf.train(num_user,num_item,trainset,testset,0.01,10,0.01,0.01,100)         # 学习率设为0.1，潜在特征个数设为10，U,V更新参数设为0.01，最大迭代次数设为100
+    pmf.train(num_user,num_item,trainset,testset,0.005,10,0.01,0.01,100)         # 学习率设为0.005，潜在特征个数设为10，U,V更新参数设为0.01，最大迭代次数设为100
